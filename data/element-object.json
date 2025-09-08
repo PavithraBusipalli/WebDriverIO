@@ -1,0 +1,38 @@
+{
+  "sessionId": "1617f9e70a6b237b266b1ae52b37a799",
+  "elementId": "f.EDBDF26631A31A788C76AC6093107ABF.d.D21315C3107C85897F682EDC8AB79CB3.e.16",
+  "element-6066-11e4-a52e-4f735466cecf": "f.EDBDF26631A31A788C76AC6093107ABF.d.D21315C3107C85897F682EDC8AB79CB3.e.16",
+  "locator": { "type": "css", "value": "#contact_reply > h1" },
+  "selector": "#contact_reply > h1",
+  "parent": {
+    "sessionId": "1617f9e70a6b237b266b1ae52b37a799",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "139.0.7258.155",
+      "chrome": {
+        "chromedriverVersion": "139.0.7258.155 (206d8aac017ed2a506c9ee9389c39d5d97663c9d-refs/branch-heads/7258@{#2927})",
+        "userDataDir": "C:\\Users\\PAVITH~1\\AppData\\Local\\Temp\\scoped_dir11132_1074935942"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": { "debuggerAddress": "localhost:52584" },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {},
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": { "implicit": 0, "pageLoad": 300000, "script": 30000 },
+      "unhandledPromptBehavior": "ignore",
+      "webSocketUrl": "ws://localhost:52579/session/1617f9e70a6b237b266b1ae52b37a799",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true,
+      "wdio:driverPID": 11132
+    }
+  },
+  "isReactElement": false,
+  "isShadowElement": false
+}

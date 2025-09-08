@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="async vs sync webdriverio" timestamp="2025-09-06T12:01:07" time="0.013" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="async vs sync - webdriverio"/>
+      <property name="capabilities" value="chrome.139_0_7258_155.windows"/>
+      <property name="file" value="file:///C:/Users/PavithraBusipalli/Desktop/JS_Auto/ui-testing/WebDriverIO/Udemy/webdriverio/test/specs/async-example.spec.js"/>
+    </properties>
+    <testcase classname="chrome.139_0_7258_155.windows.async_vs_sync_-_webdriverio" name="async vs sync" time="0.009">
+      <system-out><![CDATA[
+COMMAND: GET /session/d934808f582e90ac56c24a14c7fd28c1/url - {}
+COMMAND: DELETE /session/d934808f582e90ac56c24a14c7fd28c1 - {}
+RESULT: {}
+COMMAND: GET /session/d934808f582e90ac56c24a14c7fd28c1/url - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

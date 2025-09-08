@@ -1,0 +1,29 @@
+{
+  "sessionId": "129cbd816deef46174cedf064bb19356",
+  "capabilities": {
+    "acceptInsecureCerts": false,
+    "browserName": "chrome",
+    "browserVersion": "139.0.7258.139",
+    "chrome": {
+      "chromedriverVersion": "139.0.7258.139 (54b87fe5881df381307c2ef806b8e5e87e8a6790-refs/branch-heads/7258@{#2632})",
+      "userDataDir": "C:\\Users\\PAVITH~1\\AppData\\Local\\Temp\\scoped_dir10740_599068311"
+    },
+    "fedcm:accounts": true,
+    "goog:chromeOptions": { "debuggerAddress": "localhost:65306" },
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": { "implicit": 0, "pageLoad": 300000, "script": 30000 },
+    "unhandledPromptBehavior": "ignore",
+    "webSocketUrl": "ws://localhost:65296/session/129cbd816deef46174cedf064bb19356",
+    "webauthn:extension:credBlob": true,
+    "webauthn:extension:largeBlob": true,
+    "webauthn:extension:minPinLength": true,
+    "webauthn:extension:prf": true,
+    "webauthn:virtualAuthenticators": true,
+    "wdio:driverPID": 10740
+  }
+}

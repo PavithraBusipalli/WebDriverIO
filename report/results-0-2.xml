@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" errors="0" skipped="0">
+  <testsuite name="locating elements" timestamp="2025-09-06T12:01:08" time="8.48" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="locating elements"/>
+      <property name="capabilities" value="chrome.139_0_7258_155.windows"/>
+      <property name="file" value="file:///C:/Users/PavithraBusipalli/Desktop/JS_Auto/ui-testing/WebDriverIO/Udemy/webdriverio/test/specs/locating-elements.spec.js"/>
+    </properties>
+    <testcase classname="chrome.139_0_7258_155.windows.locating_elements" name="locate element" time="8.253">
+      <system-out><![CDATA[
+COMMAND: POST /session/6b0bcd8091754b8874e3ff038b8fe754/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/6b0bcd8091754b8874e3ff038b8fe754/element/f.F5887F4CC8A4F9B6A1345CCC50E97164.d.CCE5CFDBD4CE2354D5C9866DD2DD46D5.e.42/click - {}
+RESULT: {}
+COMMAND: POST /session/6b0bcd8091754b8874e3ff038b8fe754/element/f.F5887F4CC8A4F9B6A1345CCC50E97164.d.CCE5CFDBD4CE2354D5C9866DD2DD46D5.e.43/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.139_0_7258_155.windows.locating_elements" name="locate elements" time="0.225">
+      <system-out><![CDATA[
+COMMAND: POST /session/6b0bcd8091754b8874e3ff038b8fe754/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/6b0bcd8091754b8874e3ff038b8fe754/element/f.F5887F4CC8A4F9B6A1345CCC50E97164.d.38B8A1AEE5E04D8C3C1AB7EEDB57B575.e.81/text - {}
+RESULT: {}
+COMMAND: GET /session/6b0bcd8091754b8874e3ff038b8fe754/element/f.F5887F4CC8A4F9B6A1345CCC50E97164.d.38B8A1AEE5E04D8C3C1AB7EEDB57B575.e.82/text - {}
+RESULT: {}
+COMMAND: GET /session/6b0bcd8091754b8874e3ff038b8fe754/element/f.F5887F4CC8A4F9B6A1345CCC50E97164.d.38B8A1AEE5E04D8C3C1AB7EEDB57B575.e.83/text - {}
+RESULT: {}
+COMMAND: GET /session/6b0bcd8091754b8874e3ff038b8fe754/element/f.F5887F4CC8A4F9B6A1345CCC50E97164.d.38B8A1AEE5E04D8C3C1AB7EEDB57B575.e.84/text - {}
+RESULT: {}
+COMMAND: GET /session/6b0bcd8091754b8874e3ff038b8fe754/element/f.F5887F4CC8A4F9B6A1345CCC50E97164.d.38B8A1AEE5E04D8C3C1AB7EEDB57B575.e.85/text - {}
+RESULT: {}
+COMMAND: GET /session/6b0bcd8091754b8874e3ff038b8fe754/element/f.F5887F4CC8A4F9B6A1345CCC50E97164.d.38B8A1AEE5E04D8C3C1AB7EEDB57B575.e.86/text - {}
+RESULT: {}
+COMMAND: GET /session/6b0bcd8091754b8874e3ff038b8fe754/element/f.F5887F4CC8A4F9B6A1345CCC50E97164.d.38B8A1AEE5E04D8C3C1AB7EEDB57B575.e.87/text - {}
+RESULT: {}
+COMMAND: GET /session/6b0bcd8091754b8874e3ff038b8fe754/element/f.F5887F4CC8A4F9B6A1345CCC50E97164.d.38B8A1AEE5E04D8C3C1AB7EEDB57B575.e.88/text - {}
+RESULT: {}
+COMMAND: GET /session/6b0bcd8091754b8874e3ff038b8fe754/element/f.F5887F4CC8A4F9B6A1345CCC50E97164.d.38B8A1AEE5E04D8C3C1AB7EEDB57B575.e.89/text - {}
+RESULT: {}
+COMMAND: GET /session/6b0bcd8091754b8874e3ff038b8fe754/element/f.F5887F4CC8A4F9B6A1345CCC50E97164.d.38B8A1AEE5E04D8C3C1AB7EEDB57B575.e.90/text - {}
+RESULT: {}
+COMMAND: DELETE /session/6b0bcd8091754b8874e3ff038b8fe754 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
