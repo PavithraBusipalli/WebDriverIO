@@ -84,5 +84,80 @@ describe('advanced element interactions - examples', () => {
         
     });
 
-    it('')
+    it('handling window', async () => {
+        await browser.url("https://www.webdriveruniversity.com/");
+        await browser.newWindow("https://www.automationteststore.com/");
+
+        let currentWindow_Title = await browser.getTitle();
+        console.log(`>>Current Window Title: ${currentWindow_Title}`);
+        await expect(browser).toHaveUrl(expect.stringContaining('automationteststore'));
+        await browser.pause(2000);
+
+        await browser.switchWindow("https://www.webdriveruniversity.com/");
+        let parentWindowTitle = await browser.getTitle();
+        console.log(`>>Parent Window Title: ${parentWindowTitle}`);
+        await expect(browser).toHaveTitle(expect.stringContaining('Automation & AI Testing Courses by Gianni Bruno | WebDriver University'))
+
+        await $('#contact-us').click();
+        await browser.pause(2000);
+        await browser.switchWindow("https://www.automationteststore.com/");
+        await browser.closeWindow();
+
+        await browser.switchWindow("contactus");
+        await browser.closeWindow();
+
+        await browser.switchWindow('webdriveruni');
+        console.log(await browser.getTitle());
+        await browser.pause(3000);
+    });
+
+    it('IFrames', async () => {
+        await browser.url("/IFrame/index.html");
+        const iframe = await $('#frame');
+        await browser.switchToFrame(iframe);
+        await $("//a[text()='Our Products']").click();
+        await browser.pause(3000);
+        await browser.switchToParentFrame();
+        await browser.pause(3000);
+    });
+
+    it('Alerts', async () => {
+        await browser.url("/Popup-Alerts/index.html");
+        await $('#button1').click();
+        await browser.waitUntil(async () => {
+            try {
+                await browser.getAlertText();
+                return true;
+            } catch (e) {
+                return false;
+            }
+        }, { timeout: 5000, timeoutMsg: 'expected alert to be present' });
+        await browser.acceptAlert();
+        await $('#button4').click();
+        const alertText = await browser.getAlertText();
+        await expect(alertText).toEqual('Press a button!');
+        browser.acceptAlert();
+        await expect($('#confirm-alert-text')).toHaveText('You pressed OK!');
+        await browser.pause(3000);
+    });
+
+    it('file upload', async () => {
+        await browser.url("/File-Upload/index.html");
+        await $('#myFile').addValue(`${process.cwd()}\\data\\dummy_file.txt`);
+        await browser.pause(2000);
+        await $('#submit-button').click();
+        await browser.pause(2000);
+    });
+    
+    it('JS', async () => {
+        await browser.url("/Hidden-Elements/index.html");
+        await browser.execute(() => {
+            return document.getElementById('not-displayed').setAttribute("id", "");
+        });
+
+        await browser.execute(() => {
+            return document.body.style.backgroundColor = 'tomato';
+        })
+        await browser.pause(3000);
+    })
 });
