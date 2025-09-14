@@ -1,3 +1,8 @@
-node_modules/
-allure_results/
-allure_report/
+/node_modules/
+/allure_results/
+/allure_report/
+screenshots/
+.env/
+.DS_Store
+.vscode/
+reports/
